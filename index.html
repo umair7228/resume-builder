@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <h2>Objective</h2>
+            <label for="objective">Objective:</label>
+            <textarea id="objective" rows="3" placeholder="Write your career objective..." required></textarea>
+
+            <h2>Education</h2>
+            <label for="education">Education:</label>
+            <textarea id="education" rows="4" required></textarea>
+
+            <h2>Work Experience</h2>
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" rows="4" required></textarea>
+
+            <h2>Skills</h2>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume" class="resume">
+            <h2>Generated Resume</h2>
+            <p id="res-name"></p>
+            <p id="res-email"></p>
+            <h3>Objective</h3>
+            <p id="res-objective"></p>
+            <h3>Education</h3>
+            <p id="res-education"></p>
+            <h3>Work Experience</h3>
+            <p id="res-experience"></p>
+            <h3>Skills</h3>
+            <ul id="res-skills"></ul>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

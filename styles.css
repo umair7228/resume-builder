@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: start;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.resume {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%; /* Ensures the resume does not exceed its container */
+    overflow-wrap: break-word; /* Ensures long words are wrapped to the next line */
+    word-wrap: break-word; /* Older fallback for word wrapping */
+    overflow: auto; /* Adds scroll if content exceeds container height */
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5; /* Improves readability of the text */
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: square;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing of textareas */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 10px;
+    }
+
+    input, textarea {
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}
