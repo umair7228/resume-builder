@@ -1,96 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
+    margin: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-    color: #333;
-    text-align: start;
+h1 {
+    text-align: center;
+    color: #00796b;
+}
+
+h2, h3 {
+    color: #004d40;
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #004d40;
 }
 
 input, textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
     box-sizing: border-box;
+    background: #fafafa;
 }
 
 button {
     margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #28a745;
+    padding: 12px 20px;
+    background-color: #00796b;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #004d40;
 }
 
 .resume {
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    max-width: 100%; /* Ensures the resume does not exceed its container */
-    overflow-wrap: break-word; /* Ensures long words are wrapped to the next line */
-    word-wrap: break-word; /* Older fallback for word wrapping */
-    overflow: auto; /* Adds scroll if content exceeds container height */
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: auto;
+    margin-bottom: 20px;
 }
 
-p {
-    margin: 10px 0;
-    line-height: 1.5; /* Improves readability of the text */
-}
-
-ul {
-    padding-left: 20px;
-    list-style-type: square;
-    margin-top: 5px;
-}
-
-textarea {
-    resize: vertical; /* Allows vertical resizing of textareas */
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .resume {
-        padding: 10px;
-    }
-
-    input, textarea {
-        padding: 6px;
-    }
-
-    button {
-        padding: 8px 12px;
-    }
+.hidden {
+    display: none;
 }
